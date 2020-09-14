@@ -1,0 +1,35 @@
+@main-color: #68b0c9;
+@text-color: #535353;
+@white: #fff;
+@black: #000;
+
+html {
+    font-size: 10px;
+}
+
+header {
+    padding-top: 4rem;
+
+    .logo {
+        font-size: 2.3rem;
+        color: @main-color;
+        //border: 2px solid @white;
+        background-clip: text;
+            }
+
+    .phone {
+        padding-top:1.5rem;
+        strong {
+            font-size: 2.4rem;
+            color: @text-color;
+            line-height: 4.2rem;
+        }
+
+        a {
+            font-size: 1.4rem;
+            line-height: 4.2rem;
+            text-decoration: underline;
+            text-align: right;
+        }
+    }
+}
