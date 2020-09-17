@@ -10,6 +10,10 @@ body {
 section {
   padding-bottom: 10rem;
 }
+.section-header h2 {
+  font-size: 3.6rem;
+  color: #535353;
+}
 button {
   display: block;
   background-color: #68b0c9;
@@ -57,6 +61,7 @@ header .phone a {
 .hero {
   background: url(../images/hero/hero_bg.jpg) no-repeat center;
   background-size: cover;
+  max-width: 100%;
 }
 .hero-title h1 {
   font-size: 4rem;
@@ -85,9 +90,68 @@ header .phone a {
 .hero .form-subtitle {
   font-size: 1.2rem;
 }
+.facilities-header {
+  margin-top: 8rem;
+  margin-bottom: 16rem;
+}
+.facilities-description h3 {
+  font-size: 3rem;
+  color: #68b0c9;
+  padding-bottom: 3rem;
+  padding-top: 3.5rem;
+}
+.facilities-description p {
+  font-size: 1.8rem;
+  color: #535353;
+}
+.facilities-image {
+  margin-bottom: 14rem;
+}
+.facilities-image img {
+  max-width: 100%;
+}
 @media (max-width: 769px) {
   .hero-title h1 {
     font-size: 3.5rem;
+  }
+  .facilities {
+    display: flex;
+    flex-flow: wrap;
+  }
+  .facilities-header h2 {
+    font-size: 2.8rem;
+  }
+  .facilities-description {
+    margin-bottom: 5rem;
+  }
+  .facilities-description h3 {
+    padding-top: 0;
+  }
+  .facilities-description-first {
+    order: 0;
+    width: 100%;
+  }
+  .facilities-description-second {
+    order: 2;
+    width: 100%;
+  }
+  .facilities-description-third {
+    order: 4 width: 100%;
+  }
+  .facilities .image-first {
+    order: 1;
+    width: 100%;
+  }
+  .facilities .image-second {
+    order: 3;
+    width: 100%;
+  }
+  .facilities .image-third {
+    order: 5;
+    width: 100%;
+  }
+  .facilities .arrow {
+    display: none;
   }
 }
 @media (max-width: 576px) {

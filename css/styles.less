@@ -18,22 +18,31 @@ body {
 section {
     padding-bottom: 10rem;
 }
-button{ 
+
+.section-header {
+    h2 {
+        font-size: 3.6rem;
+        color: @text-color;
+    }
+}
+
+button {
     display: block;
-    background-color:@main-color;
-    color:@white;
-    padding:2.1rem 6rem;
+    background-color: @main-color;
+    color: @white;
+    padding: 2.1rem 6rem;
     margin-right: auto;
     margin-left: auto;
-    border:none;
+    border: none;
     border-radius: 2.3rem;
     box-shadow: 0 5px 5px rgba(1, 1, 1, 0.1);
 }
+
 input {
     display: block;
-    padding:1.7rem 4.3rem;
+    padding: 1.7rem 4.3rem;
     margin-top: 2rem;
-    margin-bottom: 1.5rem; 
+    margin-bottom: 1.5rem;
     margin-right: auto;
     margin-left: auto;
     text-align: center;
@@ -73,6 +82,8 @@ header {
 .hero {
     background: url(../images/hero/hero_bg.jpg) no-repeat center;
     background-size: cover;
+    max-width: 100%;
+
     &-title {
         h1 {
             font-size: 4rem;
@@ -86,7 +97,7 @@ header {
             font-size: 2.7rem;
             line-height: 4.2rem;
             color: @main-color;
-            text-align:right;
+            text-align: right;
         }
 
     }
@@ -110,41 +121,132 @@ header {
     }
 }
 
+//FACILITIES
+.facilities {
+    &-header {
+        margin-top: 8rem;
+        margin-bottom: 16rem;
+    }
 
-@media (max-width:769px){
- .hero{
-     &-title{
-         h1{
-             font-size: 3.5rem;
-         }
-     }
- }
+    &-description {
+        h3 {
+            font-size: 3rem;
+            color: @main-color;
+            padding-bottom: 3rem;
+            padding-top: 3.5rem;
+        }
+
+        p {
+            font-size: 1.8rem;
+            color: @text-color;
+        }
+    }
+
+    &-image {
+        margin-bottom: 14rem;
+
+        img {
+            max-width: 100%;
+        }
+    }
 }
 
-@media (max-width:576px){
-    .hero{
-        &-title{
-           h1{
-               font-size: 2.4rem;
+
+@media (max-width:769px) {
+    .hero {
+        &-title {
+            h1 {
+                font-size: 3.5rem;
             }
-            span{
+        }
+    }
+
+    .facilities {
+        display: flex;
+        flex-flow: wrap;
+
+        &-header {
+            h2 {
+                font-size: 2.8rem;
+
+            }
+        }
+
+        &-description {
+            margin-bottom: 5rem;
+
+            h3 {
+                padding-top: 0;
+            }
+
+            &-first {
+                order: 0;
+                width: 100%;
+            }
+
+            &-second {
+                order: 2;
+                width: 100%;
+            }
+
+            &-third {
+                order: 4 width: 100%;
+            }
+        }
+
+        .image {
+            &-first {
+                order: 1;
+                width: 100%;
+            }
+
+            &-second {
+                order: 3;
+                width: 100%;
+            }
+
+            &-third {
+                order: 5;
+                width: 100%;
+            }
+        }
+
+        .arrow {
+            display: none;
+        }
+    }
+}
+
+
+@media (max-width:576px) {
+    .hero {
+        &-title {
+            h1 {
+                font-size: 2.4rem;
+            }
+
+            span {
                 font-size: 1.6rem;
             }
         }
-        .form{
-            form{
+
+        .form {
+            form {
                 padding: 1rem;
             }
+
             padding: 1rem;
-            input{
+
+            input {
                 width: 100%;
                 font-size: 1.3rem;
             }
-            button{
+
+            button {
                 width: 100%;
                 font-size: 1.1rem;
-                padding-right:0rem;
-                padding-left:0rem;
+                padding-right: 0rem;
+                padding-left: 0rem;
             }
         }
     }
