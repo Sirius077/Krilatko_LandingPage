@@ -1,7 +1,29 @@
+@font-face {
+  font-family: 'Museo Sans 300 Light';
+  src: url('../fonts/MuseoSansCyrl-300.eot');
+  src: url('../fonts/MuseoSansCyrl-300.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansCyrl-300.ttf') format('truetype');
+  font-weight: lighter;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans 500 Medium';
+  src: url('../fonts/MuseoSansCyrl-500.eot');
+  src: url('../fonts/MuseoSansCyrl-500.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansCyrl-500.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Museo Sans 700 Bold';
+  src: url('../fonts/MuseoSansCyrl-700.eot');
+  src: url('../fonts/MuseoSansCyrl-700.eot?#iefix') format('embedded-opentype'), url('../fonts/MuseoSansCyrl-700.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+}
 html {
   font-size: 0.625em;
 }
 body {
+  font-family: 'Museo Sans 500 Medium', 'sans-serif';
   font-size: 1.6rem;
   box-sizing: border-box;
   padding: 0;
@@ -15,6 +37,7 @@ section {
   color: #535353;
 }
 button {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
   display: block;
   background-color: #68b0c9;
   color: #fff;
@@ -67,6 +90,7 @@ header .phone a {
   max-width: 100%;
 }
 .hero-title h1 {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
   font-size: 4rem;
   line-height: 5rem;
   color: #535353;
@@ -87,6 +111,7 @@ header .phone a {
   box-shadow: 0 0 38px rgba(104, 176, 201, 0.34);
 }
 .hero .form-title {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
   font-size: 2rem;
   color: #68b0c9;
 }
@@ -94,16 +119,19 @@ header .phone a {
   font-size: 1.2rem;
 }
 .facilities-header {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
   margin-top: 8rem;
   margin-bottom: 16rem;
 }
 .facilities-description h3 {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
   font-size: 3rem;
   color: #68b0c9;
   padding-bottom: 3rem;
   padding-top: 3.5rem;
 }
 .facilities-description p {
+  font-family: 'Museo Sans 300 Light', 'sans-serif';
   font-size: 1.8rem;
   color: #535353;
 }
@@ -116,6 +144,7 @@ header .phone a {
 .price {
   background: url(../images/price/price-bg.jpg) no-repeat center;
   background-size: cover;
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
   max-width: 100%;
 }
 .price-header {
@@ -154,6 +183,22 @@ header .phone a {
   font-size: 1.4rem;
   color: #d04545;
 }
+.stats {
+  padding-top: 10rem;
+}
+.stats-numbers h3 {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  font-size: 4.7rem;
+  color: #68b0c9;
+  text-align: center;
+  line-height: 5rem;
+}
+.stats-numbers span {
+  width: 100%;
+  display: inline-block;
+  font-size: 1.8rem;
+  text-align: center;
+}
 @media (max-width: 991px) {
   .price-pricing {
     width: 12rem;
@@ -190,7 +235,8 @@ header .phone a {
     width: 100%;
   }
   .facilities-description-third {
-    order: 4 width: 100%;
+    order: 4;
+    width: 100%;
   }
   .facilities .image-first {
     order: 1;
@@ -213,13 +259,16 @@ header .phone a {
   .price-pricing {
     margin-bottom: 2rem;
   }
+  .stats-numbers {
+    padding-bottom: 3rem;
+  }
 }
 @media (max-width: 576px) {
   .hero-title h1 {
     font-size: 2.4rem;
   }
   .hero-title span {
-    font-size: 1.6rem;
+    font-size: 1.5rem;
   }
   .hero .form {
     padding: 1rem;
@@ -240,5 +289,8 @@ header .phone a {
   .price-pricing {
     margin-right: auto;
     margin-left: auto;
+  }
+  .stats-numbers {
+    padding-bottom: 5rem;
   }
 }
