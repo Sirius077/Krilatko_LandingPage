@@ -199,6 +199,53 @@ header .phone a {
   font-size: 1.8rem;
   text-align: center;
 }
+.features {
+  background: url(../images/features/chair.jpg) no-repeat center 2rem;
+  background-size: cotain;
+}
+.features-description {
+  margin-bottom: 8rem;
+}
+.features-description h3 {
+  position: relative;
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  font-size: 2rem;
+  color: #68b0c9;
+  padding-bottom: 2rem;
+  text-align: right;
+}
+.features-description .first-arrow {
+  position: absolute;
+  top: 5%;
+  left: 100%;
+}
+.features-description .second-arrow {
+  position: absolute;
+  top: -10%;
+  right: 100%;
+}
+.features-description .third-arrow {
+  position: absolute;
+  top: -10%;
+  right: -45%;
+}
+.features-description .fourth-arrow {
+  position: absolute;
+  top: 10%;
+  right: 95%;
+}
+.features-description p {
+  font-family: 'Museo Sans 300 Light', 'sans-serif';
+  font-size: 1.4rem;
+  color: #535353;
+  text-align: right;
+}
+.features-description-right h3 {
+  text-align: left;
+}
+.features-description-right p {
+  text-align: left;
+}
 @media (max-width: 991px) {
   .price-pricing {
     width: 12rem;
@@ -207,6 +254,9 @@ header .phone a {
   }
   .price-pricing p {
     padding-top: 2rem;
+  }
+  .features {
+    display: none;
   }
 }
 @media (max-width: 769px) {

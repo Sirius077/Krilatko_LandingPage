@@ -277,6 +277,67 @@ header {
     }
 }
 
+
+//FEATURES
+
+.features {
+    background: url(../images/features/chair.jpg) no-repeat center 2rem;
+    background-size: cotain;
+
+
+    &-description {
+        margin-bottom: 8rem;
+
+        h3 {
+            position: relative;
+            .bold();
+            font-size: 2rem;
+            color: @main-color;
+            padding-bottom: 2rem;
+            text-align: right;
+        }
+
+        .first-arrow {
+            position: absolute;  
+            top: 5%;
+            left: 100%;
+        }
+
+        .second-arrow {
+            position: absolute;
+            top: -10%;
+            right: 100%;
+        }
+        .third-arrow{
+            position: absolute;
+            top:-10%;
+            right:-45%;
+        }
+        .fourth-arrow{
+            position: absolute;
+            top:10%;
+            right:95%;
+        }
+
+        p {
+            .thin();
+            font-size: 1.4rem;
+            color: @text-color;
+            text-align: right;
+        }
+
+        &-right {
+            h3 {
+                text-align: left;
+            }
+
+            p {
+                text-align: left;
+            }
+        }
+    }
+}
+
 @media(max-width:991px) {
     .price {
         &-pricing {
@@ -288,6 +349,10 @@ header {
                 padding-top: 2rem;
             }
         }
+    }
+
+    .features {
+        display: none;
     }
 }
 
