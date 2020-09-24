@@ -41,7 +41,7 @@ button {
   display: block;
   background-color: #68b0c9;
   color: #fff;
-  padding: 2.1rem 6rem;
+  padding: 2.1rem 5rem;
   margin-right: auto;
   margin-left: auto;
   border: none;
@@ -66,12 +66,20 @@ header {
   padding-top: 4rem;
   margin-bottom: 0rem;
 }
+header .logo {
+  padding-top: 3rem;
+}
+header .logo img {
+  position: absolute;
+  top: -20%;
+}
 header .logo-text {
+  position: relative;
   font-size: 2.3rem;
   color: #68b0c9;
 }
 header .phone {
-  padding-top: 1.5rem;
+  padding-top: 1rem;
 }
 header .phone strong {
   font-size: 2.4rem;
@@ -95,9 +103,10 @@ header .phone a {
   line-height: 5rem;
   color: #535353;
   padding-top: 2rem;
+  text-align: right;
 }
 .hero-title span {
-  display: inline-block;
+  display: block;
   font-size: 2.7rem;
   line-height: 4.2rem;
   color: #68b0c9;
@@ -246,6 +255,23 @@ header .phone a {
 .features-description-right p {
   text-align: left;
 }
+.delivery {
+  background: url(../images/delivery/delivery-bg.jpg) no-repeat center;
+  padding-top: 1rem;
+}
+.delivery-form {
+  background: url(../images/delivery/arrow.svg) no-repeat right;
+}
+.delivery-title h3 {
+  font-size: 2rem;
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  line-height: 3.4rem;
+}
+.delivery-subtitle span {
+  font-size: 2rem;
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  color: #68b0c9;
+}
 @media (max-width: 991px) {
   .price-pricing {
     width: 12rem;
@@ -258,10 +284,20 @@ header .phone a {
   .features {
     display: none;
   }
+  .delivery-form {
+    background: none;
+  }
 }
 @media (max-width: 769px) {
+  header .logo img {
+    left: 40%;
+  }
   .hero-title h1 {
     font-size: 3.5rem;
+    text-align: center;
+  }
+  .hero-title span {
+    text-align: center;
   }
   .facilities {
     display: flex;

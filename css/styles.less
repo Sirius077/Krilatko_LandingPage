@@ -73,7 +73,7 @@ button {
     display: block;
     background-color: @main-color;
     color: @white;
-    padding: 2.1rem 6rem;
+    padding: 2.1rem 5rem;
     margin-right: auto;
     margin-left: auto;
     border: none;
@@ -102,14 +102,22 @@ header {
     margin-bottom: 0rem;
 
     .logo {
+        padding-top: 3rem;
+
+        img {
+            position: absolute;
+            top: -20%;
+        }
+
         &-text {
+            position: relative;
             font-size: 2.3rem;
             color: @main-color;
         }
     }
 
     .phone {
-        padding-top: 1.5rem;
+        padding-top: 1rem;
 
         strong {
             font-size: 2.4rem;
@@ -138,10 +146,11 @@ header {
             line-height: 5rem;
             color: @text-color;
             padding-top: 2rem;
+            text-align: right;
         }
 
         span {
-            display: inline-block;
+            display: block;
             font-size: 2.7rem;
             line-height: 4.2rem;
             color: @main-color;
@@ -298,7 +307,7 @@ header {
         }
 
         .first-arrow {
-            position: absolute;  
+            position: absolute;
             top: 5%;
             left: 100%;
         }
@@ -308,15 +317,17 @@ header {
             top: -10%;
             right: 100%;
         }
-        .third-arrow{
+
+        .third-arrow {
             position: absolute;
-            top:-10%;
-            right:-45%;
+            top: -10%;
+            right: -45%;
         }
-        .fourth-arrow{
+
+        .fourth-arrow {
             position: absolute;
-            top:10%;
-            right:95%;
+            top: 10%;
+            right: 95%;
         }
 
         p {
@@ -338,6 +349,31 @@ header {
     }
 }
 
+//DELIVERY
+.delivery {
+    background: url(../images/delivery/delivery-bg.jpg) no-repeat center;
+    padding-top: 1rem;
+    &-form {
+        background: url(../images/delivery/arrow.svg) no-repeat right;
+    }
+
+    &-title {
+        h3 {
+            font-size: 2rem;
+            .bold();
+            line-height: 3.4rem;
+        }
+    }
+
+    &-subtitle {
+        span {
+            font-size: 2rem;
+            .bold();
+            color: @main-color;
+        }
+    }
+}
+
 @media(max-width:991px) {
     .price {
         &-pricing {
@@ -354,15 +390,34 @@ header {
     .features {
         display: none;
     }
+
+    .delivery {
+        &-form {
+            background: none;
+        }
+    }
 }
 
 
 
 @media (max-width:769px) {
+    header {
+        .logo{
+            img{
+                left:40%;
+            }
+        }
+    }
+
     .hero {
         &-title {
             h1 {
                 font-size: 3.5rem;
+                text-align: center;
+            }
+
+            span {
+                text-align: center;
             }
         }
     }
