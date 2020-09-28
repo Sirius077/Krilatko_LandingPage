@@ -272,6 +272,88 @@ header .phone a {
   font-family: 'Museo Sans 700 Bold', 'sans-serif';
   color: #68b0c9;
 }
+.compare {
+  background: url(../images/compare/compare-bg.jpg) no-repeat;
+  background-position: 49.5% 50%;
+  background-size: 26rem;
+}
+.compare-header {
+  padding-top: 5rem;
+  padding-bottom: 4.5rem;
+}
+.compare-header p {
+  display: inline-block;
+  text-align: left;
+}
+.compare-header p:first-of-type {
+  text-align: right;
+}
+.compare-header-gray {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  font-size: 2.2rem;
+  color: #535353;
+  padding-right: 6rem;
+}
+.compare-header-blue {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  font-size: 2.2rem;
+  color: #68b0c9;
+}
+.compare-description-block {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  font-size: 1.5rem;
+  padding-bottom: 3rem;
+}
+.compare-description-block .gray {
+  position: relative;
+  color: #535353;
+  text-align: right;
+}
+.compare-description-block .gray-image {
+  position: absolute;
+  top: 0;
+  right: -30%;
+}
+.compare-description-block .blue {
+  position: relative;
+  color: #68b0c9;
+}
+.compare-description-block .blue-image {
+  position: absolute;
+  top: 0;
+  left: -30%;
+}
+.address iframe {
+  max-width: 100%;
+}
+.address-delivery img {
+  padding-bottom: 2rem;
+}
+.address-delivery p {
+  font-family: 'Museo Sans 300 Light', 'sans-serif';
+  font-size: 1.6rem;
+  color: #535353;
+  padding-bottom: 2rem;
+}
+.address-delivery h4 {
+  font-family: 'Museo Sans 700 Bold', 'sans-serif';
+  font-size: 2rem;
+  color: #68b0c9;
+  padding-bottom: 5rem;
+}
+.footer .logo img {
+  position: absolute;
+  top: -80%;
+}
+.footer .logo-text {
+  position: relative;
+  font-size: 2.3rem;
+  color: #68b0c9;
+  vertical-align: top;
+}
+.footer .sertificate {
+  vertical-align: middle;
+}
 @media (max-width: 991px) {
   .price-pricing {
     width: 12rem;
@@ -286,6 +368,18 @@ header .phone a {
   }
   .delivery-form {
     background: none;
+  }
+  .compare-description-block .gray {
+    font-size: 1.3rem;
+  }
+  .compare-description-block .gray-image {
+    right: -40%;
+  }
+  .compare-description-block .blue {
+    font-size: 1.3rem;
+  }
+  .compare-description-block .blue-image {
+    left: -49%;
   }
 }
 @media (max-width: 769px) {
@@ -348,6 +442,16 @@ header .phone a {
   .stats-numbers {
     padding-bottom: 3rem;
   }
+  .compare {
+    display: none;
+  }
+  .address-delivery img {
+    padding-top: 2rem;
+  }
+  .footer .logo img {
+    top: -100%;
+    left: 35%;
+  }
 }
 @media (max-width: 576px) {
   .hero-title h1 {
@@ -378,5 +482,8 @@ header .phone a {
   }
   .stats-numbers {
     padding-bottom: 5rem;
+  }
+  .address-delivery button {
+    font-size: 1.3rem;
   }
 }
